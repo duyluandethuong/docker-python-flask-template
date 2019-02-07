@@ -1,0 +1,11 @@
+version: '2.3'
+
+services:
+  python:
+    command: ./run_dev.sh
+    ports:
+      - "6969:5000"
+    volumes:
+      - ..:/app/
+    environment:
+      - ENV=DEVELOPMENT

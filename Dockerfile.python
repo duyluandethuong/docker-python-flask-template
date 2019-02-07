@@ -1,0 +1,17 @@
+FROM python:3.6.6
+
+COPY requirements.txt /app/
+WORKDIR /app
+RUN pip3 install --no-cache-dir gunicorn
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
+ENV FLASK_APP=/app/main.py
+ENV GUNICORN_CMD_ARGS=--bind=0.0.0.0:5000
+
+COPY . /app
+
+EXPOSE 5000
+
+CMD ["./run_prod.sh"]
