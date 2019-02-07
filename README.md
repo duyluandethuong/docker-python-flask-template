@@ -1,4 +1,1 @@
-# raspi-picture-frame
-Get photos from AWS S3 and display in a picture frame, suitable to use with Raspberry Pi connected monitor
-# docker-python-flask-template
-# docker-python-flask-template
+Just clone this repo to your machine, copy it to another folder and enjoy writing code
