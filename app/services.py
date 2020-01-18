@@ -6,6 +6,10 @@ import json
 import os
 import time
 
+# Uncomment these line and add according to your project
+# from app.models import *
+# from app.controllers import *
+
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
