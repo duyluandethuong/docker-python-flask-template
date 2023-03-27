@@ -2,4 +2,4 @@ Flask==1.1.1
 gunicorn==19.7.1
 py4j==0.10.4
 flask-cors
-redis==2.10.6
+redis==4.5.3
